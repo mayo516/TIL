@@ -40,3 +40,18 @@ console.log('마지막파일입니다')
 브라우저는 3초라는 공백을 계산해서 *콜스택*에 추가한다. 
 
 <h2> 콜백이라는 지옥 </h2>
+
+함수들을 중첩시키면 콜백 지옥이 만들어진다. 
+
+![image](https://user-images.githubusercontent.com/70703716/180755088-3d835402-c7f6-4412-b5cf-458bf89c8c36.png)
+
+![image](https://user-images.githubusercontent.com/70703716/180755559-a516b35e-b414-4476-ab78-60ca7e9e5555.png)1, 
+
+하나 이상의 콜백이 있는 경우는 흔하다. 
+
+![image](https://user-images.githubusercontent.com/70703716/180756072-efbfd435-2a47-4f25-bfb3-e6d8cf88ac6f.png)
+
+가상의 함수이다. 콜백을 전달한다. 
+이 경우 자바스크립트의 문제인 콜백 지옥이 나타날 수 있다. 정해지지 않은 시점의 일을 하려고 할 때 발생.
+
+---> Promise와 비동기 함수로 해결할 수 있다. 
